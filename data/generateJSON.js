@@ -23,4 +23,4 @@ peeps.forEach(function(peep) {
   characters.push(character);
 });
 
-fs.writeFileSync('data/potter.json', JSON.stringify(characters), 'utf8');
+fs.writeFileSync('data/states.json', JSON.stringify(characters), 'utf8');
