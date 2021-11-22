@@ -17,22 +17,4 @@ for (let index=1; index<=51; index++){
   states.push(state);
 }
 
-/*stateNames.forEach(function(stateName) {
-  let state_info = stateName.split(',');
-  let state = {};
-  state['name'] = state_info[0];
-  state['spending'] = state_info[1];
-  console.log(state_info[2]);
-  state['gradRate'] = state_info[2].trim("");
-
-  /*if (state_info[3])
-    state['skills'] = character_info[12].split('|');
-  else {
-    character['skills'] = [];
-  }
-
-  states.push(state);
-
-}); */
-
 fs.writeFileSync('data/states.json', JSON.stringify(characters), 'utf8');
