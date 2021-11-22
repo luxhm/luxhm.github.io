@@ -19,7 +19,7 @@ stateNames.forEach(function(stateName) {
     character['skills'] = [];
   }*/
 
-  states.push(character);
+  states.push(state);
 });
 
 fs.writeFileSync('data/states.json', JSON.stringify(characters), 'utf8');
