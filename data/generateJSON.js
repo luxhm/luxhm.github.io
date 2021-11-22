@@ -6,20 +6,33 @@ let stateNames_csv = fs.readFileSync('states.csv', 'utf8');
 
 let stateNames = stateNames_csv.split("\n");
 
-stateNames.forEach(function(stateName) {
+for (let index=1; index<=51; index++){
+  let stateName = stateNames[index];
   let state_info = stateName.split(',');
   let state = {};
-  state['name'] = state_info[1];
-  state['spending'] = state_info[2];
-  state['gradRate'] = state_info[3];
+  state['name'] = state_info[0];
+  state['spending'] = state_info[1];
+  console.log(state_info[2]);
+  state['gradRate'] = state_info[2].trim("");
+  states.push(state);
+}
+
+/*stateNames.forEach(function(stateName) {
+  let state_info = stateName.split(',');
+  let state = {};
+  state['name'] = state_info[0];
+  state['spending'] = state_info[1];
+  console.log(state_info[2]);
+  state['gradRate'] = state_info[2].trim("");
 
   /*if (state_info[3])
     state['skills'] = character_info[12].split('|');
   else {
     character['skills'] = [];
-  }*/
+  }
 
   states.push(state);
-});
+
+}); */
 
 fs.writeFileSync('states.json', JSON.stringify(states), 'utf8');

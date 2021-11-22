@@ -1,262 +1,257 @@
 [
   {
-    "name": "Spending",
-    "spending": "GradRate\r"
+    "name": "Alabama",
+    "spending": "8755",
+    "gradRate": "90"
   },
   {
-    "name": "\"8",
-    "spending": "755\"",
-    "gradRate": "90\r"
+    "name": "Alaska",
+    "spending": "18175",
+    "gradRate": "78.5"
   },
   {
-    "name": "\"18",
-    "spending": "175\"",
-    "gradRate": "78.5\r"
+    "name": "Arizona",
+    "spending": "7208",
+    "gradRate": "78.7"
   },
   {
-    "name": "\"7",
-    "spending": "208\"",
-    "gradRate": "78.7\r"
+    "name": "Arkansas",
+    "spending": "9394",
+    "gradRate": "89.2"
   },
   {
-    "name": "\"9",
-    "spending": "394\"",
-    "gradRate": "89.2\r"
+    "name": "California",
+    "spending": "9220",
+    "gradRate": "83"
   },
   {
-    "name": "\"9",
-    "spending": "220\"",
-    "gradRate": "83\r"
+    "name": "Colorado",
+    "spending": "8647",
+    "gradRate": "80.8"
   },
   {
-    "name": "\"8",
-    "spending": "647\"",
-    "gradRate": "80.8\r"
+    "name": "Connecticut",
+    "spending": "16631",
+    "gradRate": "88.4"
   },
   {
-    "name": "\"16",
-    "spending": "631\"",
-    "gradRate": "88.4\r"
+    "name": "Delaware",
+    "spending": "13833",
+    "gradRate": "86.9"
   },
   {
-    "name": "\"13",
-    "spending": "833\"",
-    "gradRate": "86.9\r"
+    "name": "District of Columbia",
+    "spending": "19076",
+    "gradRate": "68.5"
   },
   {
-    "name": "\"19",
-    "spending": "076\"",
-    "gradRate": "68.5\r"
+    "name": "Florida",
+    "spending": "8433",
+    "gradRate": "86.3"
   },
   {
-    "name": "\"8",
-    "spending": "433\"",
-    "gradRate": "86.3\r"
+    "name": "Georgia",
+    "spending": "9099",
+    "gradRate": "81.6"
   },
   {
-    "name": "\"9",
-    "spending": "099\"",
-    "gradRate": "81.6\r"
+    "name": "Hawaii",
+    "spending": "11823",
+    "gradRate": "84.5"
   },
   {
-    "name": "\"11",
-    "spending": "823\"",
-    "gradRate": "84.5\r"
+    "name": "Idaho",
+    "spending": "6791",
+    "gradRate": "80.7"
   },
   {
-    "name": "\"6",
-    "spending": "791\"",
-    "gradRate": "80.7\r"
+    "name": "Illinois",
+    "spending": "12287",
+    "gradRate": "86.5"
   },
   {
-    "name": "\"12",
-    "spending": "287\"",
-    "gradRate": "86.5\r"
+    "name": "Indiana",
+    "spending": "9566",
+    "gradRate": "88.1"
   },
   {
-    "name": "\"9",
-    "spending": "566\"",
-    "gradRate": "88.1\r"
+    "name": "Iowa",
+    "spending": "10313",
+    "gradRate": "91.4"
   },
   {
-    "name": "\"10",
-    "spending": "313\"",
-    "gradRate": "91.4\r"
+    "name": "Kansas",
+    "spending": "9828",
+    "gradRate": "87.2"
   },
   {
-    "name": "\"9",
-    "spending": "828\"",
-    "gradRate": "87.2\r"
+    "name": "Kentucky",
+    "spending": "9316",
+    "gradRate": "90.3"
   },
   {
-    "name": "\"9",
-    "spending": "316\"",
-    "gradRate": "90.3\r"
+    "name": "Louisiana",
+    "spending": "10490",
+    "gradRate": "81.4"
   },
   {
-    "name": "\"10",
-    "spending": "490\"",
-    "gradRate": "81.4\r"
+    "name": "Maine",
+    "spending": "12147",
+    "gradRate": "86.7"
   },
   {
-    "name": "\"12",
-    "spending": "147\"",
-    "gradRate": "86.7\r"
+    "name": "Maryland",
+    "spending": "13829",
+    "gradRate": "87.1"
   },
   {
-    "name": "\"13",
-    "spending": "829\"",
-    "gradRate": "87.1\r"
+    "name": "Massachusetts",
+    "spending": "14545",
+    "gradRate": "87.8"
   },
   {
-    "name": "\"14",
-    "spending": "545\"",
-    "gradRate": "87.8\r"
+    "name": "Michigan",
+    "spending": "10948",
+    "gradRate": "80.6"
   },
   {
-    "name": "\"10",
-    "spending": "948\"",
-    "gradRate": "80.6\r"
+    "name": "Minnesota",
+    "spending": "11089",
+    "gradRate": "83.2"
   },
   {
-    "name": "\"11",
-    "spending": "089\"",
-    "gradRate": "83.2\r"
+    "name": "Mississippi",
+    "spending": "8130",
+    "gradRate": "84"
   },
   {
-    "name": "\"8",
-    "spending": "130\"",
-    "gradRate": "84\r"
+    "name": "Missouri",
+    "spending": "9597",
+    "gradRate": "89.2"
   },
   {
-    "name": "\"9",
-    "spending": "597\"",
-    "gradRate": "89.2\r"
+    "name": "Montana",
+    "spending": "10625",
+    "gradRate": "86.4"
   },
   {
-    "name": "\"10",
-    "spending": "625\"",
-    "gradRate": "86.4\r"
+    "name": "Nebraska",
+    "spending": "11579",
+    "gradRate": "88.7"
   },
   {
-    "name": "\"11",
-    "spending": "579\"",
-    "gradRate": "88.7\r"
+    "name": "Nevada",
+    "spending": "8339",
+    "gradRate": "83.2"
   },
   {
-    "name": "\"8",
-    "spending": "339\"",
-    "gradRate": "83.2\r"
+    "name": "New Hampshire",
+    "spending": "13721",
+    "gradRate": "88.8"
   },
   {
-    "name": "\"13",
-    "spending": "721\"",
-    "gradRate": "88.8\r"
+    "name": "New Jersey",
+    "spending": "18228",
+    "gradRate": "90.9"
   },
   {
-    "name": "\"18",
-    "spending": "228\"",
-    "gradRate": "90.9\r"
+    "name": "New Mexico",
+    "spending": "9012",
+    "gradRate": "73.9"
   },
   {
-    "name": "\"9",
-    "spending": "012\"",
-    "gradRate": "73.9\r"
+    "name": "New York",
+    "spending": "19818",
+    "gradRate": "82.3"
   },
   {
-    "name": "\"19",
-    "spending": "818\"",
-    "gradRate": "82.3\r"
+    "name": "North Carolina",
+    "spending": "8390",
+    "gradRate": "86.3"
   },
   {
-    "name": "\"8",
-    "spending": "390\"",
-    "gradRate": "86.3\r"
+    "name": "North Dakota",
+    "spending": "11980",
+    "gradRate": "88.1"
   },
   {
-    "name": "\"11",
-    "spending": "980\"",
-    "gradRate": "88.1\r"
+    "name": "Ohio",
+    "spending": "11148",
+    "gradRate": "82.1"
   },
   {
-    "name": "\"11",
-    "spending": "148\"",
-    "gradRate": "82.1\r"
+    "name": "Oklahoma",
+    "spending": "7672",
+    "gradRate": "81.8"
   },
   {
-    "name": "\"7",
-    "spending": "672\"",
-    "gradRate": "81.8\r"
+    "name": "Oregon",
+    "spending": "9543",
+    "gradRate": "78.7"
   },
   {
-    "name": "\"9",
-    "spending": "543\"",
-    "gradRate": "78.7\r"
+    "name": "Pennsylvania",
+    "spending": "13864",
+    "gradRate": "85.9"
   },
   {
-    "name": "\"13",
-    "spending": "864\"",
-    "gradRate": "85.9\r"
+    "name": "Rhode Island",
+    "spending": "14415",
+    "gradRate": "84"
   },
   {
-    "name": "\"14",
-    "spending": "415\"",
-    "gradRate": "84\r"
+    "name": "South Carolina",
+    "spending": "9514",
+    "gradRate": "81"
   },
   {
-    "name": "\"9",
-    "spending": "514\"",
-    "gradRate": "81\r"
+    "name": "South Dakota",
+    "spending": "8470",
+    "gradRate": "84.1"
   },
   {
-    "name": "\"8",
-    "spending": "470\"",
-    "gradRate": "84.1\r"
+    "name": "Tennessee",
+    "spending": "8496",
+    "gradRate": "90"
   },
   {
-    "name": "\"8",
-    "spending": "496\"",
-    "gradRate": "90\r"
+    "name": "Texas",
+    "spending": "8299",
+    "gradRate": "90"
   },
   {
-    "name": "\"8",
-    "spending": "299\"",
-    "gradRate": "90\r"
+    "name": "Utah",
+    "spending": "6555",
+    "gradRate": "87"
   },
   {
-    "name": "\"6",
-    "spending": "555\"",
-    "gradRate": "87\r"
+    "name": "Vermont",
+    "spending": "16419",
+    "gradRate": "85.1"
   },
   {
-    "name": "\"16",
-    "spending": "419\"",
-    "gradRate": "85.1\r"
+    "name": "Virginia",
+    "spending": "10960",
+    "gradRate": "87.5"
   },
   {
-    "name": "\"10",
-    "spending": "960\"",
-    "gradRate": "87.5\r"
+    "name": "Washington",
+    "spending": "9672",
+    "gradRate": "86.7"
   },
   {
-    "name": "\"9",
-    "spending": "672\"",
-    "gradRate": "86.7\r"
+    "name": "West Virginia",
+    "spending": "11132",
+    "gradRate": "90.2"
   },
   {
-    "name": "\"11",
-    "spending": "132\"",
-    "gradRate": "90.2\r"
+    "name": "Wisconsin",
+    "spending": "11071",
+    "gradRate": "89.7"
   },
   {
-    "name": "\"11",
-    "spending": "071\"",
-    "gradRate": "89.7\r"
-  },
-  {
-    "name": "\"15",
-    "spending": "700\"",
-    "gradRate": "81.7\r"
-  },
-  {}
+    "name": "Wyoming",
+    "spending": "15700",
+    "gradRate": "81.7"
+  }
 ]
