@@ -2,25 +2,24 @@ const fs = require('fs');
 
 let states = [];
 
-let states_csv = fs.readFileSync('states.csv', 'utf8');
+let stateNames_csv = fs.readFileSync('states.csv', 'utf8');
 
-let states = states.split("\n");
+let stateNames = stateNames_csv.split("\n");
 
-peeps.forEach(function(peep) {
-  let state_info = peep.split(',');
+stateNames.forEach(function(stateName) {
+  let state_info = stateName.split(',');
   let state = {};
   state['name'] = state_info[1];
-  state['gender'] = character_info[2];
-  state['house'] = character_info[4];
-  state['species'] = character_info[7];
+  state['spending'] = state_info[2];
+  state['gradRate'] = state_info[3];
 
-  if (character_info[12])
-    character['skills'] = character_info[12].split('|');
+  /*if (state_info[3])
+    state['skills'] = character_info[12].split('|');
   else {
     character['skills'] = [];
-  }
+  }*/
 
-  characters.push(character);
+  states.push(character);
 });
 
 fs.writeFileSync('data/states.json', JSON.stringify(characters), 'utf8');
