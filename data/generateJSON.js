@@ -35,4 +35,4 @@ for (let index=1; index<=51; index++){
 
 }); */
 
-fs.writeFileSync('states.json', JSON.stringify(states), 'utf8');
+fs.writeFileSync('data/states.json', JSON.stringify(characters), 'utf8');
