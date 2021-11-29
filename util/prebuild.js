@@ -9,3 +9,5 @@ for(i=0;i<=list.length-1;i++){
     console.error(err);
   }
 }
+
+fs.copyDirectory("../src/images");

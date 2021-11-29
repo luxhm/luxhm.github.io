@@ -33,5 +33,3 @@ for (let microNum = 1; microNum<=10; microNum++){
 
 fs.writeFileSync('../build/index.html', index_html, 'utf8');
 fs.writeFileSync('../build/about.html', about_html, 'utf8');
-fs.writeFileSync('../build/images/lux_micro.png', lux_micro, 'utf8');
-fs.writeFileSync('../build/images/lux_micro.png', lux_micro, 'utf8');
