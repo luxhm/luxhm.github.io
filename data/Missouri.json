@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Naylor R-II",
+    "spending": "7617.22488",
+    "gradRate": "90"
+  },
+  {
+    "name": "CAMERON R-I",
+    "spending": "9099.438202",
+    "gradRate": "92"
+  },
+  {
+    "name": "MID-BUCHANAN CO. R-V",
+    "spending": "9759.459459",
+    "gradRate": "92"
+  },
+  {
+    "name": "PATTONSBURG R-II",
+    "spending": "10589.62264",
+    "gradRate": "50"
+  },
+  {
+    "name": "LESTERVILLE R-IV",
+    "spending": "19601.53257",
+    "gradRate": "80"
+  },
+  {
+    "name": "LIBERTY 53",
+    "spending": "10269.13012",
+    "gradRate": "95"
+  }
+]

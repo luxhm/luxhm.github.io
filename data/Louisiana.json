@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ACADIA PARISH",
+    "spending": "9277.303234",
+    "gradRate": "93"
+  },
+  {
+    "name": "LAFAYETTE PARISH",
+    "spending": "10189.6321",
+    "gradRate": "78"
+  },
+  {
+    "name": "CLAIBORNE PARISH",
+    "spending": "10990.65421",
+    "gradRate": "95"
+  },
+  {
+    "name": "ASCENSION PARISH",
+    "spending": "11895.73865",
+    "gradRate": "89"
+  },
+  {
+    "name": "WEST FELICIANA PARISH",
+    "spending": "14193.91462",
+    "gradRate": "95"
+  },
+  {
+    "name": "ORLEANS PARISH",
+    "spending": "20646.60743",
+    "gradRate": "81"
+  }
+]

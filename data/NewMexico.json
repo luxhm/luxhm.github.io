@@ -1,0 +1,32 @@
+[
+  {
+    "name": "RIO RANCHO PUBLIC SCHOOLS",
+    "spending": "8019.816639",
+    "gradRate": "89"
+  },
+  {
+    "name": "RATON PUBLIC SCHOOLS",
+    "spending": "9496.240602",
+    "gradRate": "74.5"
+  },
+  {
+    "name": "GALLUP-MCKINleY CITY SCHOOLS",
+    "spending": "11104.41279",
+    "gradRate": "77"
+  },
+  {
+    "name": "HAGERMAN MUNICIPAL SCHOOLS",
+    "spending": "13382.15103",
+    "gradRate": "64.5"
+  },
+  {
+    "name": "MESA VISTA CONSOLIDATED SCHOOLS",
+    "spending": "17624.50593",
+    "gradRate": "80"
+  },
+  {
+    "name": "MOSQUERO MUNICIPAL SCHOOLS",
+    "spending": "38538.46154",
+    "gradRate": "75.1"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "PIEDMONT",
+    "spending": "6047",
+    "gradRate": "96"
+  },
+  {
+    "name": "MANNFORD",
+    "spending": "7761",
+    "gradRate": "95"
+  },
+  {
+    "name": "PAULS VALLEY",
+    "spending": "8406",
+    "gradRate": "92"
+  },
+  {
+    "name": "SOUTH COFFEYVILLE",
+    "spending": "9245",
+    "gradRate": "90"
+  },
+  {
+    "name": "SALLISAW",
+    "spending": "7576",
+    "gradRate": "67"
+  },
+  {
+    "name": "FREEDOM",
+    "spending": "30925",
+    "gradRate": "50"
+  }
+]
