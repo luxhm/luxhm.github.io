@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Branson Reorganized School District No. 82",
+    "spending": "7361",
+    "gradRate": "84.5"
+  },
+  {
+    "name": "Woodland Park School District No. Re-2",
+    "spending": "9191",
+    "gradRate": "82"
+  },
+  {
+    "name": "Bayfield School District No. 10Jt-R",
+    "spending": "10292",
+    "gradRate": "92"
+  },
+  {
+    "name": "Genoa-Hugo School District No. C-113",
+    "spending": "11589",
+    "gradRate": "50"
+  },
+  {
+    "name": "Lone Star School District No. 101",
+    "spending": "14185",
+    "gradRate": "50"
+  },
+  {
+    "name": "Creede School District",
+    "spending": "23163",
+    "gradRate": "50"
+  }
+]

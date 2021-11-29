@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Mendota Unified",
+    "spending": "11212",
+    "gradRate": "74"
+  },
+  {
+    "name": "Westwood Unified",
+    "spending": "16686",
+    "gradRate": "50"
+  },
+  {
+    "name": "Muroc Joint Unified",
+    "spending": "16081",
+    "gradRate": "67"
+  },
+  {
+    "name": "Lakeside Union Elementary",
+    "spending": "10159",
+    "gradRate": "72"
+  },
+  {
+    "name": "Los Banos Unified",
+    "spending": "11536",
+    "gradRate": "95"
+  },
+  {
+    "name": "Needles Unified",
+    "spending": "13191",
+    "gradRate": "95"
+  }
+]

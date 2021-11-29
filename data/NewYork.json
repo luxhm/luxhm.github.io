@@ -1,0 +1,32 @@
+[
+  {
+    "name": "GENERAL BROWN CENTRAL SCHOOL DISTRICT",
+    "spending": "13740.64171",
+    "gradRate": "92"
+  },
+  {
+    "name": "CANASTOTA CENTRAL SCHOOL DISTRICT",
+    "spending": "18950.48041",
+    "gradRate": "82"
+  },
+  {
+    "name": "DUNDEE CENTRAL SCHOOL DISTRICT",
+    "spending": "20835.00717",
+    "gradRate": "74.5"
+  },
+  {
+    "name": "NAPLES CENTRAL SCHOOL DISTRICT",
+    "spending": "22978.93258",
+    "gradRate": "84.5"
+  },
+  {
+    "name": "JOHNSBURG CENTRAL SCHOOL DISTRICT",
+    "spending": "26386.90476",
+    "gradRate": "80"
+  },
+  {
+    "name": "MOUNT PLEASANT-COTTAGE UNION FREE SCHOOL DISTRICT",
+    "spending": "27446.57676",
+    "gradRate": "95"
+  }
+]

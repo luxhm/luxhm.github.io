@@ -1,0 +1,32 @@
+[
+  {
+    "name": "WYLIE ISD",
+    "spending": "6848.402447",
+    "gradRate": "98"
+  },
+  {
+    "name": "WICHITA FALLS ISD",
+    "spending": "9101.872872",
+    "gradRate": "98"
+  },
+  {
+    "name": "FERRIS ISD",
+    "spending": "9788.404727",
+    "gradRate": "95"
+  },
+  {
+    "name": "HARPER ISD",
+    "spending": "10589.52703",
+    "gradRate": "90"
+  },
+  {
+    "name": "CHANNING ISD",
+    "spending": "12060.77348",
+    "gradRate": "50"
+  },
+  {
+    "name": "GUTHRIE ISD",
+    "spending": "28769.23077",
+    "gradRate": "50"
+  }
+]

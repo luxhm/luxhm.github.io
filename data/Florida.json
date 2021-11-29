@@ -1,0 +1,32 @@
+[
+  {
+    "name": "CLAY",
+    "spending": "8155",
+    "gradRate": "93"
+  },
+  {
+    "name": "PASCO",
+    "spending": "8692",
+    "gradRate": "89"
+  },
+  {
+    "name": "CITRUS",
+    "spending": "9165",
+    "gradRate": "89"
+  },
+  {
+    "name": "MADISON",
+    "spending": "9506",
+    "gradRate": "83"
+  },
+  {
+    "name": "TAYLOR",
+    "spending": "9818",
+    "gradRate": "82"
+  },
+  {
+    "name": "MONROE",
+    "spending": "13384",
+    "gradRate": "86"
+  }
+]
