@@ -13,19 +13,19 @@ for (let microNum = 1; microNum<=10; microNum++){
 }
 
 let index_html = ejs.render(macro_template, {
-  filename: __dirname + 'views/index.ejs',
+  filename: __dirname + '/views/index.ejs',
   data: JSON.parse(macro_data)
 });
 
 let about_html = ejs.render(about_template, {
-  filename: __dirname + 'views/about.ejs',
+  filename: __dirname + '/views/about.ejs',
   data: JSON.parse(macro_data)
 });
 
 let micro_html;
 for (let microNum = 1; microNum<=10; microNum++){
   micro_html = ejs.render(micro_template, {
-    filename: __dirname + 'views/micro.ejs',
+    filename: __dirname + '/views/micro.ejs',
     data: "micro"+microNum
   });
   fs.writeFileSync("../build/micro" + microStateNames[microNum-1] + ".html", micro_html, "utf8");
