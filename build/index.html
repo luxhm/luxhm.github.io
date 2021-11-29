@@ -1,5 +1,335 @@
+<!doctype html>
 <html>
-    <body>
-    <h1> Test Page </h1>
-    </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>State Spending Vs. Graduation Rate</title>
+  <meta name="author" content="Lux">
+  <meta name="description" content="A look at state spending vs graduation rate data">
+  <meta content="text/html" http-equiv="Content-type" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header>
+    <h1> US States </h1>
+  </header>
+  <section id="state-table">
+    <table>
+      <tr>
+        <th>name</th>
+        <th>spending</th>
+        <th>gradRate</th>
+      </tr>
+      
+      <tr>
+        <td>Alaska</td>
+        <td>18175</td>
+        <td>78.5</td>
+      </tr>
+      
+      <tr>
+        <td>Arizona</td>
+        <td>7208</td>
+        <td>78.7</td>
+      </tr>
+      
+      <tr>
+        <td>Arkansas</td>
+        <td>9394</td>
+        <td>89.2</td>
+      </tr>
+      
+      <tr>
+        <td>California</td>
+        <td>9220</td>
+        <td>83</td>
+      </tr>
+      
+      <tr>
+        <td>Colorado</td>
+        <td>8647</td>
+        <td>80.8</td>
+      </tr>
+      
+      <tr>
+        <td>Connecticut</td>
+        <td>16631</td>
+        <td>88.4</td>
+      </tr>
+      
+      <tr>
+        <td>Delaware</td>
+        <td>13833</td>
+        <td>86.9</td>
+      </tr>
+      
+      <tr>
+        <td>District of Columbia</td>
+        <td>19076</td>
+        <td>68.5</td>
+      </tr>
+      
+      <tr>
+        <td>Florida</td>
+        <td>8433</td>
+        <td>86.3</td>
+      </tr>
+      
+      <tr>
+        <td>Georgia</td>
+        <td>9099</td>
+        <td>81.6</td>
+      </tr>
+      
+      <tr>
+        <td>Hawaii</td>
+        <td>11823</td>
+        <td>84.5</td>
+      </tr>
+      
+      <tr>
+        <td>Idaho</td>
+        <td>6791</td>
+        <td>80.7</td>
+      </tr>
+      
+      <tr>
+        <td>Illinois</td>
+        <td>12287</td>
+        <td>86.5</td>
+      </tr>
+      
+      <tr>
+        <td>Indiana</td>
+        <td>9566</td>
+        <td>88.1</td>
+      </tr>
+      
+      <tr>
+        <td>Iowa</td>
+        <td>10313</td>
+        <td>91.4</td>
+      </tr>
+      
+      <tr>
+        <td>Kansas</td>
+        <td>9828</td>
+        <td>87.2</td>
+      </tr>
+      
+      <tr>
+        <td>Kentucky</td>
+        <td>9316</td>
+        <td>90.3</td>
+      </tr>
+      
+      <tr>
+        <td>Louisiana</td>
+        <td>10490</td>
+        <td>81.4</td>
+      </tr>
+      
+      <tr>
+        <td>Maine</td>
+        <td>12147</td>
+        <td>86.7</td>
+      </tr>
+      
+      <tr>
+        <td>Maryland</td>
+        <td>13829</td>
+        <td>87.1</td>
+      </tr>
+      
+      <tr>
+        <td>Massachusetts</td>
+        <td>14545</td>
+        <td>87.8</td>
+      </tr>
+      
+      <tr>
+        <td>Michigan</td>
+        <td>10948</td>
+        <td>80.6</td>
+      </tr>
+      
+      <tr>
+        <td>Minnesota</td>
+        <td>11089</td>
+        <td>83.2</td>
+      </tr>
+      
+      <tr>
+        <td>Mississippi</td>
+        <td>8130</td>
+        <td>84</td>
+      </tr>
+      
+      <tr>
+        <td>Missouri</td>
+        <td>9597</td>
+        <td>89.2</td>
+      </tr>
+      
+      <tr>
+        <td>Montana</td>
+        <td>10625</td>
+        <td>86.4</td>
+      </tr>
+      
+      <tr>
+        <td>Nebraska</td>
+        <td>11579</td>
+        <td>88.7</td>
+      </tr>
+      
+      <tr>
+        <td>Nevada</td>
+        <td>8339</td>
+        <td>83.2</td>
+      </tr>
+      
+      <tr>
+        <td>New Hampshire</td>
+        <td>13721</td>
+        <td>88.8</td>
+      </tr>
+      
+      <tr>
+        <td>New Jersey</td>
+        <td>18228</td>
+        <td>90.9</td>
+      </tr>
+      
+      <tr>
+        <td>New Mexico</td>
+        <td>9012</td>
+        <td>73.9</td>
+      </tr>
+      
+      <tr>
+        <td>New York</td>
+        <td>19818</td>
+        <td>82.3</td>
+      </tr>
+      
+      <tr>
+        <td>North Carolina</td>
+        <td>8390</td>
+        <td>86.3</td>
+      </tr>
+      
+      <tr>
+        <td>North Dakota</td>
+        <td>11980</td>
+        <td>88.1</td>
+      </tr>
+      
+      <tr>
+        <td>Ohio</td>
+        <td>11148</td>
+        <td>82.1</td>
+      </tr>
+      
+      <tr>
+        <td>Oklahoma</td>
+        <td>7672</td>
+        <td>81.8</td>
+      </tr>
+      
+      <tr>
+        <td>Oregon</td>
+        <td>9543</td>
+        <td>78.7</td>
+      </tr>
+      
+      <tr>
+        <td>Pennsylvania</td>
+        <td>13864</td>
+        <td>85.9</td>
+      </tr>
+      
+      <tr>
+        <td>Rhode Island</td>
+        <td>14415</td>
+        <td>84</td>
+      </tr>
+      
+      <tr>
+        <td>South Carolina</td>
+        <td>9514</td>
+        <td>81</td>
+      </tr>
+      
+      <tr>
+        <td>South Dakota</td>
+        <td>8470</td>
+        <td>84.1</td>
+      </tr>
+      
+      <tr>
+        <td>Tennessee</td>
+        <td>8496</td>
+        <td>90</td>
+      </tr>
+      
+      <tr>
+        <td>Texas</td>
+        <td>8299</td>
+        <td>90</td>
+      </tr>
+      
+      <tr>
+        <td>Utah</td>
+        <td>6555</td>
+        <td>87</td>
+      </tr>
+      
+      <tr>
+        <td>Vermont</td>
+        <td>16419</td>
+        <td>85.1</td>
+      </tr>
+      
+      <tr>
+        <td>Virginia</td>
+        <td>10960</td>
+        <td>87.5</td>
+      </tr>
+      
+      <tr>
+        <td>Washington</td>
+        <td>9672</td>
+        <td>86.7</td>
+      </tr>
+      
+      <tr>
+        <td>West Virginia</td>
+        <td>11132</td>
+        <td>90.2</td>
+      </tr>
+      
+      <tr>
+        <td>Wisconsin</td>
+        <td>11071</td>
+        <td>89.7</td>
+      </tr>
+      
+      <tr>
+        <td>Wyoming</td>
+        <td>15700</td>
+        <td>81.7</td>
+      </tr>
+      
+    </table>
+  </section>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
 </html>
