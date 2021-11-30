@@ -24,10 +24,12 @@ let about_html = ejs.render(about_template, {
 
 let micro_html;
 for (let microNum = 1; microNum<=10; microNum++){
+  let micro_data = global["micro"+microNum];
   micro_html = ejs.render(micro_template, {
     filename: __dirname + '/views/micro.ejs',
-    data: "micro"+microNum
+    data: JSON.parse(micro_data)
   });
+
   fs.writeFileSync("./build/micro" + microStateNames[microNum-1] + ".html", micro_html, "utf8");
 }
 
