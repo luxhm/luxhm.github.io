@@ -16,10 +16,10 @@
   "devDependencies": {},
   "scripts": {
     "prebuild": "node util/prebuild.js",
-    "build": "node util/build.js",
+    "build": "node src/siteGenerator.js",
     "postbuild": "node server.js",
     "publish": "npm run production:start",
-    "production:start": "open ../cstowe-22.github.io/build/index.html"
+    "production:start": "open ../luxhm.github.io/build/index.html"
   },
   "author": "",
   "license": "ISC"
