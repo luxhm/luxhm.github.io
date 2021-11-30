@@ -13,6 +13,8 @@ for(i=0;i<=list.length-1;i++){
   }
 }
 
+fs.mkDirSync("build");
+
 //This needs to copy all of the static folders from the src folder into the new build folder
 var source = '../src/images'
 var destination = '../util/build/images'
