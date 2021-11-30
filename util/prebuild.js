@@ -14,11 +14,30 @@ for(i=0;i<=list.length-1;i++){
 }
 
 //This needs to copy all of the static folders from the src folder into the new build folder
-var source = './src/images'
+var images = './src/images'
+var css = './src/css'
+var js = './src/js'
+var imagesDest = './build/images'
+var cssDest = './build/css'
+var jsDest = './build/js'
 
-var destination = './build/images'
+fsX.copy(images, imagesDest, function (err) {
+    if (err){
+        console.log('An error occurred while copying the folder.')
+        return console.error(err)
+    }
+    console.log('Copy completed!')
+});
 
-fsX.copy(source, destination, function (err) {
+fsX.copy(css, cssDest, function (err) {
+    if (err){
+        console.log('An error occurred while copying the folder.')
+        return console.error(err)
+    }
+    console.log('Copy completed!')
+});
+
+fsX.copy(js, jsDest, function (err) {
     if (err){
         console.log('An error occurred while copying the folder.')
         return console.error(err)
