@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Wirt County School District",
+    "spending": "11354",
+    "gradRate": "84.5"
+  },
+  {
+    "name": "Fayette County School District",
+    "spending": "11037",
+    "gradRate": "88"
+  },
+  {
+    "name": "Logan County School District",
+    "spending": "11176",
+    "gradRate": "91"
+  },
+  {
+    "name": "Morgan County School District",
+    "spending": "10892",
+    "gradRate": "87"
+  },
+  {
+    "name": "Doddridge County School District",
+    "spending": "17878",
+    "gradRate": "95"
+  },
+  {
+    "name": "Randolph County School District",
+    "spending": "10053",
+    "gradRate": "97"
+  }
+]
