@@ -14,9 +14,9 @@
   "scripts": {
     "prebuild": "node util/prebuild.js",
     "build": "node util/build.js",
-    "postbuild": "open http://localhost:3000 && node server.js",
-    "deploy": "npm run publish && npm run production:start",
-    "production:start": "open cstowe-22.github.io"
+    "postbuild": "node server.js",
+    "publish": "npm run production:start",
+    "production:start": "open ../cstowe-22.github.io/build/index.html"
   },
   "author": "",
   "license": "ISC"
