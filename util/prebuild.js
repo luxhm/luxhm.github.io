@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require("path")
-//var fsX = require("fs-extra");
+var fsX = require("fs-extra");
 
 const list = fs.readdirSync('./build');
 
@@ -12,11 +12,11 @@ for(i=0;i<=list.length-1;i++){
     console.error(err);
   }
 }
-/*
-//This needs to copy all of the static folders from the src folder into the new build folder
-var source1 = './src/images'
 
-var destination1 = './util/build/images'
+//This needs to copy all of the static folders from the src folder into the new build folder
+var source = './src/images'
+
+var destination = './build/images'
 
 fsX.copy(source, destination, function (err) {
     if (err){
@@ -25,4 +25,3 @@ fsX.copy(source, destination, function (err) {
     }
     console.log('Copy completed!')
 });
-*/
