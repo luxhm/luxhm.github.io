@@ -6,9 +6,9 @@ let macro_template = fs.readFileSync('./src/views/index.ejs', 'utf8');
 let about_template = fs.readFileSync('./src/views/about.ejs', 'utf8');
 let micro_template = fs.readFileSync('./src/views/micro.ejs', 'utf8');
 
-let microStateNames = ["California", "Colorado", "Florida", "Iowa", "Louisiana", "Missouri", "NewMexico", "NewYork", "Oklahoma", "Texas"];
+let microStateNames = ["California", "Colorado", "Florida", "Iowa", "Louisiana", "Missouri", "NewMexico", "NewYork", "Oklahoma", "Texas", "WestVirginia"];
 
-for (let microNum = 1; microNum<=10; microNum++){
+for (let microNum = 1; microNum<=11; microNum++){
   global["micro"+microNum] = fs.readFileSync("./data/" + microStateNames[microNum-1] + ".json", 'utf8');
 }
 
@@ -23,12 +23,13 @@ let about_html = ejs.render(about_template, {
 });
 
 let micro_html;
-for (let microNum = 1; microNum<=10; microNum++){
+for (let microNum = 1; microNum<=11; microNum++){
   let micro_data = global["micro"+microNum];
   micro_html = ejs.render(micro_template, {
     filename: __dirname + '/views/micro.ejs',
     data: JSON.parse(micro_data)
   });
+  console.log(micro_data);
 
   fs.writeFileSync("./build/micro" + microStateNames[microNum-1] + ".html", micro_html, "utf8");
 }
