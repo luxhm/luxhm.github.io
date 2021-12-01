@@ -17,7 +17,8 @@
   "scripts": {
     "prebuild": "node util/prebuild.js",
     "build": "node src/siteGenerator.js",
-    "postbuild": "node server.js",
+    "postbuild": "open http://localhost:3000 && node server.js",
+    //need another line that publishes to github
     "publish": "npm run production:start",
     "production:start": "open ../luxhm.github.io/build/index.html"
   },

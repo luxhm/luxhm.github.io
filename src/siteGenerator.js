@@ -29,7 +29,6 @@ for (let microNum = 1; microNum<=11; microNum++){
     filename: __dirname + '/views/micro.ejs',
     data: JSON.parse(micro_data)
   });
-  console.log(micro_data);
 
   fs.writeFileSync("./build/micro" + microStateNames[microNum-1] + ".html", micro_html, "utf8");
 }
