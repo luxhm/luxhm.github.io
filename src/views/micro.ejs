@@ -15,6 +15,14 @@
   <%- include ('partials/header'); %>
   <%- include ('partials/navbar'); %>
 
+  <% let microStateNames = ["California", "Colorado", "Florida", "Iowa", "Louisiana", "Missouri", "NewMexico", "NewYork", "Oklahoma", "Texas", "WestVirginia"]; %>
+  <h1><%= name %></h1>
+    <% microStateNames.indexOf(name) %>
+    <% let previous = microStateNames[microStateNames.indexOf(name)-1] %>
+    <% let previousFile = "micro" + <%= previous %> + ".html" %>
+    <a href="previousFile"> <%= previous %> </a>
+
+    <%= %>
 
   <section id="state-table">
     <table>

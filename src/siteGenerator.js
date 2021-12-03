@@ -27,7 +27,8 @@ for (let microNum = 1; microNum<=11; microNum++){
   let micro_data = global["micro"+microNum];
   micro_html = ejs.render(micro_template, {
     filename: __dirname + '/views/micro.ejs',
-    data: JSON.parse(micro_data)
+    data: JSON.parse(micro_data),
+    name: microStateNames[microNum-1]
   });
 
   fs.writeFileSync("./build/micro" + microStateNames[microNum-1] + ".html", micro_html, "utf8");
