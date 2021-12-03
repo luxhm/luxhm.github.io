@@ -11,6 +11,7 @@
     "jest": "^27.4.0",
     "jsdoc": "^3.6.7",
     "jshint": "^2.13.1",
+    "plotly.js-dist": "^2.7.0",
     "save": "^2.4.0"
   },
   "devDependencies": {},
