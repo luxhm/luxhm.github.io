@@ -17,7 +17,7 @@
   "devDependencies": {},
   "scripts": {
     "prebuild": "node util/prebuild.js",
-    "build": "node src/siteGenerator.js && git push origin main",
+    "build": "node src/siteGenerator.js",
     "postbuild": "open http://localhost:3000 && node server.js",
     "publish": "npm run production:start",
     "production:start": "open http://luxhm.github.io/build"
