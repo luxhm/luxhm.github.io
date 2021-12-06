@@ -14,7 +14,12 @@
 </head>
 
 <body>
-  <div id="tester" style="width:600px;height:250px;"></div>
+  <%- include ('partials/header'); %>
+  <%- include ('partials/navbar'); %>
+  <header>
+    <h1> US States </h1>
+  </header>
+  <div id="tester" style="width:1000px;height:550px;"></div>
   <%const spending = [];%>
   <%const rates = [];%>
   <% for(let i=1; i<data.length; i++){ %>
@@ -24,14 +29,11 @@
   <%let spendingEJS = spending%>
   <% let ratesEJS = rates%>
 
-  <%console.log(spendingEJS)%>
-
   <script>
   let spendJS = [];
-  let spendingJS = "(<%=spendingEJS%>)";
+  let spendingJS = "<%=spendingEJS%>";
   let spendArrayJS = [];
   spendArrayJS = spendingJS.split(",");
-  console.log(spendArrayJS);
   let ratesJS = [];
   let rateJS = "<%=ratesEJS%>)";
   let rateArrayJS = rateJS.split(",");
@@ -41,17 +43,10 @@
   for(let i=0; i<rateArrayJS.length;i++){
     ratesJS.push(parseInt(rateArrayJS[i]));
   }
-  console.log(spendJS);
   TESTER = document.getElementById('tester');
-  var trace = {x: spendArrayJS, y: rateArrayJS, mode: "markers", type: "scatter"};
-  Plotly.newPlot( TESTER,[{ x: spendArrayJS, y: rateArrayJS }] );
+  var layout = {xaxis: {range: [ 6000, 25000]}, yaxis: {range: [72, 100]}};
+  Plotly.newPlot( TESTER,[{ x: spendJS, y: ratesJS, mode: "markers", type:"scatter" }], layout );
   </script>
-  <%- include ('partials/header'); %>
-  <%- include ('partials/navbar'); %>
-  <header>
-    <h1> US States </h1>
-  </header>
-
   <section id="state-table">
     <table>
       <tr>

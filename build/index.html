@@ -14,185 +14,6 @@
 </head>
 
 <body>
-  <div id="tester" style="width:600px;height:250px;"></div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-  
-
-  <script>
-  let spendJS = [];
-  let spendingJS = "(18175,7208,9394,9220,8647,16631,13833,19076,8433,9099,11823,6791,12287,9566,10313,9828,9316,10490,12147,13829,14545,10948,11089,8130,9597,10625,11579,8339,13721,18228,9012,19818,8390,11980,11148,7672,9543,13864,14415,9514,8470,8496,8299,6555,16419,10960,9672,11132,11071,15700)";
-  let spendArrayJS = [];
-  spendArrayJS = spendingJS.split(",");
-  console.log(spendArrayJS);
-  let ratesJS = [];
-  let rateJS = "78.5,78.7,89.2,83,80.8,88.4,86.9,68.5,86.3,81.6,84.5,80.7,86.5,88.1,91.4,87.2,90.3,81.4,86.7,87.1,87.8,80.6,83.2,84,89.2,86.4,88.7,83.2,88.8,90.9,73.9,82.3,86.3,88.1,82.1,81.8,78.7,85.9,84,81,84.1,90,90,87,85.1,87.5,86.7,90.2,89.7,81.7)";
-  let rateArrayJS = rateJS.split(",");
-  for(let i=0; i<spendArrayJS.length;i++){
-    spendJS.push(parseInt(spendArrayJS[i]));
-  }
-  for(let i=0; i<rateArrayJS.length;i++){
-    ratesJS.push(parseInt(rateArrayJS[i]));
-  }
-  console.log(spendJS);
-  TESTER = document.getElementById('tester');
-  var trace = {x: spendArrayJS, y: rateArrayJS, mode: "markers", type: "scatter"};
-  Plotly.newPlot( TESTER,trace);
-  </script>
   <header>
   This is my awesome, dynamically inserted header!
 </header>
@@ -236,7 +57,181 @@
   <header>
     <h1> US States </h1>
   </header>
+  <div id="tester" style="width:1000px;height:550px;"></div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
+  <script>
+  let spendJS = [];
+  let spendingJS = "18175,7208,9394,9220,8647,16631,13833,19076,8433,9099,11823,6791,12287,9566,10313,9828,9316,10490,12147,13829,14545,10948,11089,8130,9597,10625,11579,8339,13721,18228,9012,19818,8390,11980,11148,7672,9543,13864,14415,9514,8470,8496,8299,6555,16419,10960,9672,11132,11071,15700";
+  let spendArrayJS = [];
+  spendArrayJS = spendingJS.split(",");
+  let ratesJS = [];
+  let rateJS = "78.5,78.7,89.2,83,80.8,88.4,86.9,68.5,86.3,81.6,84.5,80.7,86.5,88.1,91.4,87.2,90.3,81.4,86.7,87.1,87.8,80.6,83.2,84,89.2,86.4,88.7,83.2,88.8,90.9,73.9,82.3,86.3,88.1,82.1,81.8,78.7,85.9,84,81,84.1,90,90,87,85.1,87.5,86.7,90.2,89.7,81.7)";
+  let rateArrayJS = rateJS.split(",");
+  for(let i=0; i<spendArrayJS.length;i++){
+    spendJS.push(parseInt(spendArrayJS[i]));
+  }
+  for(let i=0; i<rateArrayJS.length;i++){
+    ratesJS.push(parseInt(rateArrayJS[i]));
+  }
+  TESTER = document.getElementById('tester');
+  var layout = {xaxis: {range: [ 6000, 25000]}, yaxis: {range: [72, 100]}};
+  Plotly.newPlot( TESTER,[{ x: spendJS, y: ratesJS, mode: "markers", type:"scatter" }], layout );
+  </script>
   <section id="state-table">
     <table>
       <tr>

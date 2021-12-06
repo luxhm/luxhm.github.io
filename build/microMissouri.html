@@ -9,6 +9,7 @@
   <meta content="text/html" http-equiv="Content-type" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
 </head>
 
 <body>
@@ -65,7 +66,46 @@
     
     <a href= microNewMexico.html > NewMexico </a>
 
+    <div id="tester" style="width:1000px;height:550px;"></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
+    <script>
+    let spendJS = [];
+    let spendingJS = "9099.438202,9759.459459,10589.62264,19601.53257,10269.13012";
+    let spendArrayJS = [];
+    spendArrayJS = spendingJS.split(",");
+    let ratesJS = [];
+    let rateJS = "92,92,50,80,95)";
+    let rateArrayJS = rateJS.split(",");
+    for(let i=0; i<spendArrayJS.length;i++){
+      spendJS.push(parseInt(spendArrayJS[i]));
+    }
+    for(let i=0; i<rateArrayJS.length;i++){
+      ratesJS.push(parseInt(rateArrayJS[i]));
+    }
+    TESTER = document.getElementById('tester');
+    var layout = {xaxis: {range: [ 5000, 40000]}, yaxis: {range: [47, 100]}};
+    Plotly.newPlot( TESTER,[{ x: spendJS, y: ratesJS, mode: "markers", type:"scatter" }],layout );
+    </script>
   <section id="state-table">
     <table>
       <tr>
