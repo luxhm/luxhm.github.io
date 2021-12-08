@@ -44,7 +44,7 @@
     ratesJS.push(parseInt(rateArrayJS[i]));
   }
   TESTER = document.getElementById('tester');
-  var layout = {xaxis: {range: [ 6000, 25000]}, yaxis: {range: [72, 100]}};
+  var layout = {xaxis: {title: "Spending per Student (in US Dollars)", range: [ 6000, 25000]}, yaxis: {title: "Graduation Rate (Percentage)", range: [72, 100]}};
   Plotly.newPlot( TESTER,[{ x: spendJS, y: ratesJS, mode: "markers", type:"scatter" }], layout );
   </script>
   <section id="state-table">

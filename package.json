@@ -19,8 +19,8 @@
     "prebuild": "node util/prebuild.js",
     "build": "node src/siteGenerator.js",
     "postbuild": "open http://localhost:3000 && node server.js",
-    "publish": "npm run production:start",
-    "production:start": "open http://luxhm.github.io/build"
+    "publish": "npm run deploy",
+    "deploy": "git push origin main && open http://luxhm.github.io/build"
   },
   "author": "",
   "license": "ISC"
