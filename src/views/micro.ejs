@@ -13,11 +13,12 @@
 </head>
 
 <body>
-  <%- include ('partials/header'); %>
   <%- include ('partials/navbar'); %>
+  <%- include ('partials/header'); %>
+
 
   <% let microStateNames = ["California", "Colorado", "Florida", "Iowa", "Louisiana", "Missouri", "NewMexico", "NewYork", "Oklahoma", "Texas", "WestVirginia"]; %>
-  <h1><%= name %></h1>
+  <h1> <span style ="font-weight:normal"> <%= name %> </span> </h1>
 
     <% let previous = microStateNames[microStateNames.indexOf(name)-1] %>
     <% let previousFile = ["micro", previous, ".html"].join("") %>
