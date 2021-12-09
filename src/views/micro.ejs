@@ -32,7 +32,7 @@
     <div id="tester" style="width:1000px;height:550px;"></div>
     <%const spending = [];%>
     <%const rates = [];%>
-    <% for(let i=1; i<data.length; i++){ %>
+    <% for(let i=0; i<data.length; i++){ %>
     <%  spending.push(data[i].spending);%>
     <%  rates.push(data[i].gradRate);%>
     <%}%>
@@ -42,23 +42,26 @@
     <script>
     let spendJS = [];
     let spendingJS = "<%=spendingEJS%>";
-    let spendArrayJS = [];
-    spendArrayJS = spendingJS.split(",");
+    let spendArrayJS = spendingJS.split(",");
     let ratesJS = [];
     let rateJS = "<%=ratesEJS%>)";
     let rateArrayJS = rateJS.split(",");
     for(let i=0; i<spendArrayJS.length;i++){
       spendJS.push(parseInt(spendArrayJS[i]));
-      spendArrayJS.sort();
     }
     for(let i=0; i<rateArrayJS.length;i++){
       ratesJS.push(parseInt(rateArrayJS[i]));
     }
+      spendJS.sort(function (a, b) {  return a - b;  });
+      ratesJS.sort(function (a, b) {  return a - b;  });
+      lowX = spendJS[0]-2000;
+      highX = spendJS[5]+2000;
+      lowY = ratesJS[0]-10;
+      highY = ratesJS[5]+10;
+      console.log(spendJS);
     TESTER = document.getElementById('tester');
-    spendArrayJS.sort();
-    console.log(spendArrayJS);
-    console.log(spendArrayJS[1])
-    var layout = {xaxis: {range: [ spendArrayJS[1], spendArrayJS[4]]}, yaxis: {range: [47, 100]}};
+
+    var layout = {xaxis: {title: "Spending per Student (in US Dollars)", range: [lowX, highX]}, yaxis: {title: "Graduation Rate (Percentage)",  range: [lowY, highY]}};
     Plotly.newPlot( TESTER,[{ x: spendJS, y: ratesJS, mode: "markers", type:"scatter" }],layout );
     </script>
   <section id="state-table">

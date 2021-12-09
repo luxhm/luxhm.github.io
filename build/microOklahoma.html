@@ -95,14 +95,16 @@
     
     
     
+    
+    
+    
 
     <script>
     let spendJS = [];
-    let spendingJS = "7761,8406,9245,7576,30925";
-    let spendArrayJS = [];
-    spendArrayJS = spendingJS.split(",");
+    let spendingJS = "6047,7761,8406,9245,7576,30925";
+    let spendArrayJS = spendingJS.split(",");
     let ratesJS = [];
-    let rateJS = "95,92,90,67,50)";
+    let rateJS = "96,95,92,90,67,50)";
     let rateArrayJS = rateJS.split(",");
     for(let i=0; i<spendArrayJS.length;i++){
       spendJS.push(parseInt(spendArrayJS[i]));
@@ -110,8 +112,16 @@
     for(let i=0; i<rateArrayJS.length;i++){
       ratesJS.push(parseInt(rateArrayJS[i]));
     }
+      spendJS.sort(function (a, b) {  return a - b;  });
+      ratesJS.sort(function (a, b) {  return a - b;  });
+      lowX = spendJS[0]-2000;
+      highX = spendJS[5]+2000;
+      lowY = ratesJS[0]-10;
+      highY = ratesJS[5]+10;
+      console.log(spendJS);
     TESTER = document.getElementById('tester');
-    var layout = {xaxis: {range: [ 5000, 40000]}, yaxis: {range: [47, 100]}};
+
+    var layout = {xaxis: {title: "Spending per Student (in US Dollars)", range: [lowX, highX]}, yaxis: {title: "Graduation Rate (Percentage)",  range: [lowY, highY]}};
     Plotly.newPlot( TESTER,[{ x: spendJS, y: ratesJS, mode: "markers", type:"scatter" }],layout );
     </script>
   <section id="state-table">
