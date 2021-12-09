@@ -76,22 +76,7 @@
     var layout = {xaxis: {title: "Spending per Student (in US Dollars)", range: [lowX, highX]}, yaxis: {title: "Graduation Rate (Percentage)",  range: [lowY, highY]}};
     Plotly.newPlot( TESTER,[{ x: spendJS, y: ratesJS, mode: "markers", type:"scatter" }],layout );
     </script>
-  <section id="state-table">
-    <table>
-      <tr>
-        <th>name</th>
-        <th>spending</th>
-        <th>gradRate</th>
-      </tr>
-      <% for(let i=0; i<data.length; i++){ %>
-      <tr>
-        <td><%= data[i].name %></td>
-        <td><%= data[i].spending %></td>
-        <td><%= data[i].gradRate %></td>
-      </tr>
-      <%}%>
-    </table>
-  </section>
+
   <%- include ('partials/footer'); %>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
