@@ -45,24 +45,18 @@
   TESTER = document.getElementById('tester');
   var layout = {xaxis: {title: "Spending per Student (in US Dollars)", range: [ 6000, 25000]}, yaxis: {title: "Graduation Rate (Percentage)", range: [72, 100]}};
   Plotly.newPlot( TESTER,[{ x: spendJS, y: ratesJS, mode: "markers", type:"scatter" }], layout );
+  let spendTally = 0;
+  let rateTally = 0;
+  for(let i=0; i<spendJS.length; i++){
+    spendTally += spendJS[i];
+    rateTally += ratesJS[i];
+  }
+  let spendAvg = spendTally/spendJS.length;
+  let rateAvg = spendTally/ratesJS.length;
+  console.log(rateAvg);
+  console.log(spendAvg);
   </script>
-  <section id="state-table">
-    <table>
-      <tr>
-        <th>name</th>
-        <th>spending</th>
-        <th>gradRate</th>
-      </tr>
-      <% for(let i=1; i<data.length; i++){ %>
-      <tr>
-        <td><%= data[i].name %></td>
-        <td><%= data[i].spending %></td>
-        <td><%= data[i].gradRate %></td>
-      </tr>
-      <%}%>
-    </table>
-  </section>
-
+  
   <%- include ('partials/footer'); %>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

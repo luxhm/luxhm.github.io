@@ -19,7 +19,9 @@
 
   <% let microStateNames = ["California", "Colorado", "Florida", "Iowa", "Louisiana", "Missouri", "NewMexico", "NewYork", "Oklahoma", "Texas", "WestVirginia"]; %>
   <h1> <span style ="font-weight:normal"> <%= name %> </span> </h1>
+    <%if(name == "California"){%>
 
+<%}%>
     <% let previous = microStateNames[microStateNames.indexOf(name)-1] %>
     <% let previousFile = ["micro", previous, ".html"].join("") %>
     <a href= <%= previousFile %> > <%= previous %> </a>
@@ -28,7 +30,17 @@
     <% let next = microStateNames[microStateNames.indexOf(name)+1] %>
     <% let nextFile = ["micro", next, ".html"].join("") %>
     <a href= <%= nextFile %> > <%= next %> </a>
+    <br>
+    <span style ="font-weight:normal">
+    This infographic shows a correlation between increased spending per student and graduation rate.
+    The lowest graduation rate corresponds with the lowest spending, and vice versa
+    (although there are two districts with different spendings and the same graduation rate).
+    Compared to the infographic of the entire nation, California has an upward trend in the numerical value
+    of graduation rates relative to spending per student that is not visible in the national infographic.
+    This would suggest that this trend is isolated and is not representative of the nation if states are compared.
+    when examining data for the country.
 
+    </span>
     <div id="tester" style="width:1000px;height:550px;"></div>
     <%const spending = [];%>
     <%const rates = [];%>
