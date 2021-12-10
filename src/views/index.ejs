@@ -30,6 +30,8 @@
   <%let spendingEJS = spending%>
   <% let ratesEJS = rates%>
 
+  <p id="average_spending"></p>
+  <p id="average_grad"></p>
   <script>
   let spendJS = [];
   let spendingJS = "<%=spendingEJS%>";
@@ -53,11 +55,20 @@
     spendTally += spendJS[i];
     rateTally += ratesJS[i];
   }
-  let spendAvg = spendTally/spendJS.length;
-  let rateAvg = spendTally/ratesJS.length;
-  console.log(rateAvg);
-  console.log(spendAvg);
+  let spendAvg = Math.round(spendTally/spendJS.length);
+  let rateAvg = Math.round(rateTally/ratesJS.length);
+
+  document.getElementById("average_spending").innerHTML = "Average spending: $" + spendAvg;
+  document.getElementById("average_grad").innerHTML = "Average graduation rate: " + rateAvg + "%";
+
   </script>
+  <p>Our observations:</p>
+  <ul>
+    <li>By looking at this graph of all the US States, there seems to be no positive or negative correlation between graduation rates and school funding.</li>
+    <li>There is also a lot of variability between states; not only did the points not exhibit a positive or negative correlation, they seem to be almost randomly scattered throughout the graph.</li>
+    <li>It was jarring, although not entirely surprising, to see that the average spending nationwide on one student for an entire year was only $11,251, especially when we think about this number in the context of our own school's annual tuition. </li>
+  </ul>
+
 
   <%- include ('partials/footer'); %>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
