@@ -64,7 +64,7 @@
 
   
   <h1> <span style ="font-weight:normal"> Missouri </span> </h1>
-
+    
     
     
     <a href= microLouisiana.html > Louisiana </a>
@@ -73,7 +73,17 @@
     
     
     <a href= microNewMexico.html > NewMexico </a>
+    <br>
+    <span style ="font-weight:normal">
+    This infographic shows a correlation between increased spending per student and graduation rate.
+    The lowest graduation rate corresponds with the lowest spending, and vice versa
+    (although there are two districts with different spendings and the same graduation rate).
+    Compared to the infographic of the entire nation, California has an upward trend in the numerical value
+    of graduation rates relative to spending per student that is not visible in the national infographic.
+    This would suggest that this trend is isolated and is not representative of the nation if states are compared.
+    when examining data for the country.
 
+    </span>
     <div id="tester" style="width:1000px;height:550px;"></div>
     
     
@@ -124,54 +134,9 @@
     var layout = {xaxis: {title: "Spending per Student (in US Dollars)", range: [lowX, highX]}, yaxis: {title: "Graduation Rate (Percentage)",  range: [lowY, highY]}};
     Plotly.newPlot( TESTER,[{ x: spendJS, y: ratesJS, mode: "markers", type:"scatter" }],layout );
     </script>
-  <section id="state-table">
-    <table>
-      <tr>
-        <th>name</th>
-        <th>spending</th>
-        <th>gradRate</th>
-      </tr>
-      
-      <tr>
-        <td>Naylor R-II</td>
-        <td>7617.22488</td>
-        <td>90</td>
-      </tr>
-      
-      <tr>
-        <td>CAMERON R-I</td>
-        <td>9099.438202</td>
-        <td>92</td>
-      </tr>
-      
-      <tr>
-        <td>MID-BUCHANAN CO. R-V</td>
-        <td>9759.459459</td>
-        <td>92</td>
-      </tr>
-      
-      <tr>
-        <td>PATTONSBURG R-II</td>
-        <td>10589.62264</td>
-        <td>50</td>
-      </tr>
-      
-      <tr>
-        <td>LESTERVILLE R-IV</td>
-        <td>19601.53257</td>
-        <td>80</td>
-      </tr>
-      
-      <tr>
-        <td>LIBERTY 53</td>
-        <td>10269.13012</td>
-        <td>95</td>
-      </tr>
-      
-    </table>
-  </section>
+
   <footer>
-  This is my awesome, dynamically inserted footer! Data from <a href="https://www.kaggle.com/gulsahdemiryurek/harry-potter-dataset"> Kaggle - Harry Potter</a>
+  We compared school funding data from 2012 to graduation rate data from 2019 to see if better funding in elementary school contributed to higher graduation rates for those children, and found that there was too much variety from state to state to draw any national conclusion, although there are noticeable patterns within states, and the different patterns we believe could be a result of each state's policies regarding assigning funding. Click to get access to our source data for <a href="https://eddataexpress.ed.gov/dashboard/title-i-part-a?sy=2674&s=1035"> graduation rate </a> or <a href="https://nces.ed.gov/edfin/search/search_intro.asp"> school funding </a> .
 </footer>
 
 

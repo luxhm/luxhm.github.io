@@ -62,7 +62,7 @@
   </h5>
 </header>
 
-<p> In this project, we compared </p>
+<p> In this project, we compared graduation rate data (measured by the 4-year adjusted cohort graduation rate) from 2019 to the per pupil educational spending in the elementary and secondary school systems within the same area from 2012. We anticipated that there would be a positive correlation between these two data points—higher funding for children in elementary and middle school would lead to higher graduation rates for those children when they became high school seniors. However, the data suggests that the correlation actually much more nuanced. In the United States as a whole there did not seem to be any meaningful correlation between the two. In some states this was also the case, but in others there seemed to be a strong positive correlation, or even a negative correlation. We theorize that this may be because individual states assign school funding differently. Some states may reactively give more funding to the districts with the lowest graduation rates, whereas others may give the most funding the districts with the highest graduation rates.
 
     <h2> <span style ="font-weight:normal"> US States </span> </h2>
   <div id="tester" style="width:1000px;height:550px;"></div>
@@ -242,11 +242,17 @@
   TESTER = document.getElementById('tester');
   var layout = {xaxis: {title: "Spending per Student (in US Dollars)", range: [ 6000, 25000]}, yaxis: {title: "Graduation Rate (Percentage)", range: [72, 100]}};
   Plotly.newPlot( TESTER,[{ x: spendJS, y: ratesJS, mode: "markers", type:"scatter" }], layout );
+  let spendTally = 0;
+  let rateTally = 0;
+  for(let i=0; i<spendJS.length; i++){
+    spendTally += spendJS[i];
+    rateTally += ratesJS[i];
+  }
+  let spendAvg = spendTally/spendJS.length;
+  let rateAvg = spendTally/ratesJS.length;
+  console.log(rateAvg);
+  console.log(spendAvg);
   </script>
-  <ul>
-  <li> Our first conclusion</li>
- </ul>
-
 
   <footer>
   We compared school funding data from 2012 to graduation rate data from 2019 to see if better funding in elementary school contributed to higher graduation rates for those children, and found that there was too much variety from state to state to draw any national conclusion, although there are noticeable patterns within states, and the different patterns we believe could be a result of each state's policies regarding assigning funding. Click to get access to our source data for <a href="https://eddataexpress.ed.gov/dashboard/title-i-part-a?sy=2674&s=1035"> graduation rate </a> or <a href="https://nces.ed.gov/edfin/search/search_intro.asp"> school funding </a> .
