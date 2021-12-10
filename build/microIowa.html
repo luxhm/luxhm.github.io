@@ -64,16 +64,28 @@
 
   
   <h1> <span style ="font-weight:normal"> Iowa </span> </h1>
-
     
     
+    
+    <small>Previous microsummary: </small> <style="display:inline">
     <a href= microFlorida.html > Florida </a>
 
 
     
     
+    <small> Next microsummary: </small> <style="display:inline">
     <a href= microLouisiana.html > Louisiana </a>
+    <br>
+    <span style ="font-weight:normal">
+    This infographic shows a correlation between increased spending per student and graduation rate.
+    The lowest graduation rate corresponds with the lowest spending, and vice versa
+    (although there are two districts with different spendings and the same graduation rate).
+    Compared to the infographic of the entire nation, California has an upward trend in the numerical value
+    of graduation rates relative to spending per student that is not visible in the national infographic.
+    This would suggest that this trend is isolated and is not representative of the nation if states are compared.
+    when examining data for the country.
 
+    </span>
     <div id="tester" style="width:1000px;height:550px;"></div>
     
     
@@ -124,54 +136,9 @@
     var layout = {xaxis: {title: "Spending per Student (in US Dollars)", range: [lowX, highX]}, yaxis: {title: "Graduation Rate (Percentage)",  range: [lowY, highY]}};
     Plotly.newPlot( TESTER,[{ x: spendJS, y: ratesJS, mode: "markers", type:"scatter" }],layout );
     </script>
-  <section id="state-table">
-    <table>
-      <tr>
-        <th>name</th>
-        <th>spending</th>
-        <th>gradRate</th>
-      </tr>
-      
-      <tr>
-        <td>GLADBROOK-REINBECK COMM SCHOOL DISTRICT</td>
-        <td>8794.871795</td>
-        <td>90</td>
-      </tr>
-      
-      <tr>
-        <td>MONTEZUMA COMM SCHOOL DISTRICT</td>
-        <td>10173.33333</td>
-        <td>90</td>
-      </tr>
-      
-      <tr>
-        <td>NORTH UNION COMM SCHOOL DISTRICT</td>
-        <td>10712.96296</td>
-        <td>90</td>
-      </tr>
-      
-      <tr>
-        <td>VINTON-SHELLSBURG COMM SCHOOL DISTRICT</td>
-        <td>11303.4134</td>
-        <td>95</td>
-      </tr>
-      
-      <tr>
-        <td>COUNCIL BLUFFS COMM SCHOOL DISTRICT</td>
-        <td>12048.30968</td>
-        <td>87</td>
-      </tr>
-      
-      <tr>
-        <td>GMG COMM SCHOOL DISTRICT</td>
-        <td>17905.92334</td>
-        <td>90</td>
-      </tr>
-      
-    </table>
-  </section>
+
   <footer>
-  This is my awesome, dynamically inserted footer! Data from <a href="https://www.kaggle.com/gulsahdemiryurek/harry-potter-dataset"> Kaggle - Harry Potter</a>
+  We compared school funding data from 2012 to graduation rate data from 2019 to see if better funding in elementary school contributed to higher graduation rates for those children, and found that there was too much variety from state to state to draw any national conclusion, although there are noticeable patterns within states, and the different patterns we believe could be a result of each state's policies regarding assigning funding. Click to get access to our source data for <a href="https://eddataexpress.ed.gov/dashboard/title-i-part-a?sy=2674&s=1035"> graduation rate </a> or <a href="https://nces.ed.gov/edfin/search/search_intro.asp"> school funding </a> .
 </footer>
 
 

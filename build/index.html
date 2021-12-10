@@ -62,7 +62,7 @@
   </h5>
 </header>
 
-<p> In this project, we compared </p>
+<p> In this project, we compared graduation rates (measured by the 4-year adjusted cohort graduation rate) from 2019 to the per pupil educational spending in the elementary and secondary school systems within the same area from 2012. We anticipated that there would be a positive correlation between these two data points—higher funding for children in elementary and middle school would lead to higher graduation rates for those children when they became high school seniors. However, the data suggests that the correlation is actually much more nuanced. In the United States as a whole there did not seem to be any meaningful correlation between the two. In some states this was also the case, but in others there seemed to be a strong positive correlation, or even a negative correlation. We theorize that this may be because individual states assign school funding differently. Some states may reactively give more funding to the districts with the lowest graduation rates, whereas others may give the most funding the districts with the highest graduation rates.
 
     <h2> <span style ="font-weight:normal"> US States </span> </h2>
   <div id="tester" style="width:1000px;height:550px;"></div>
@@ -225,6 +225,8 @@
   
   
 
+  <p id="average_spending"></p>
+  <p id="average_grad"></p>
   <script>
   let spendJS = [];
   let spendingJS = "8755,18175,7208,9394,9220,8647,16631,13833,19076,8433,9099,11823,6791,12287,9566,10313,9828,9316,10490,12147,13829,14545,10948,11089,8130,9597,10625,11579,8339,13721,18228,9012,19818,8390,11980,11148,7672,9543,13864,14415,9514,8470,8496,8299,6555,16419,10960,9672,11132,11071,15700";
@@ -242,10 +244,25 @@
   TESTER = document.getElementById('tester');
   var layout = {xaxis: {title: "Spending per Student (in US Dollars)", range: [ 6000, 25000]}, yaxis: {title: "Graduation Rate (Percentage)", range: [72, 100]}};
   Plotly.newPlot( TESTER,[{ x: spendJS, y: ratesJS, mode: "markers", type:"scatter" }], layout );
+  let spendTally = 0;
+  let rateTally = 0;
+  for(let i=0; i<spendJS.length; i++){
+    spendTally += spendJS[i];
+    rateTally += ratesJS[i];
+  }
+  let spendAvg = Math.round(spendTally/spendJS.length);
+  let rateAvg = Math.round(rateTally/ratesJS.length);
+
+  document.getElementById("average_spending").innerHTML = "Average spending: $" + spendAvg;
+  document.getElementById("average_grad").innerHTML = "Average graduation rate: " + rateAvg + "%";
+
   </script>
+  <p>Our observations:</p>
   <ul>
-  <li> Our first conclusion</li>
- </ul>
+    <li>By looking at this graph of all the US States, there seems to be no positive or negative correlation between graduation rates and school funding.</li>
+    <li>There is also a lot of variability between states; not only did the points not exhibit a positive or negative correlation, they seem to be almost randomly scattered throughout the graph.</li>
+    <li>It was jarring, although not entirely surprising, to see that the average spending nationwide on one student for an entire year was only $11,251, especially when we think about this number in the context of our own school's annual tuition. </li>
+  </ul>
 
 
   <footer>

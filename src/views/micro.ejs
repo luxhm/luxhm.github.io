@@ -21,11 +21,13 @@
   <h1> <span style ="font-weight:normal"> <%= name %> </span> </h1>
     <% let previous = microStateNames[microStateNames.indexOf(name)-1] %>
     <% let previousFile = ["micro", previous, ".html"].join("") %>
+    <small>Previous microsummary: </small> <style="display:inline">
     <a href= <%= previousFile %> > <%= previous %> </a>
 
 
     <% let next = microStateNames[microStateNames.indexOf(name)+1] %>
     <% let nextFile = ["micro", next, ".html"].join("") %>
+    <small> Next microsummary: </small> <style="display:inline">
     <a href= <%= nextFile %> > <%= next %> </a>
     <br>
 
