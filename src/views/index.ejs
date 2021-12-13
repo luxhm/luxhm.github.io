@@ -24,18 +24,21 @@
 
   <%- include ('partials/navbar'); %>
   <%- include ('partials/header'); %>
-<p> In this project, we compared graduation rates (measured by the 4-year adjusted cohort graduation rate) from 2019 to the per pupil educational spending in the elementary and secondary school systems within the same area from 2012. We anticipated that there would be a positive correlation between these two data points—higher funding for children in elementary and middle school would lead to higher graduation rates for those children when they became high school seniors. However, the data suggests that the correlation is actually much more nuanced. In the United States as a whole there did not seem to be any meaningful correlation between the two. In some states this was also the case, but in others there seemed to be a strong positive correlation, or even a negative correlation. We theorize that this may be because individual states assign school funding differently. Some states may reactively give more funding to the districts with the lowest graduation rates, whereas others may give the most funding the districts with the highest graduation rates.
+<p> In this project, we compared graduation rates (measured by the 4-year adjusted cohort graduation rate) from 2019 to the per pupil educational spending in the elementary and secondary school systems within the same area from 2012. We anticipated that there would be a positive correlation between these two data points—higher funding for children in elementary and middle school would lead to higher graduation rates for those children when they became high school seniors. However, the data suggests that the correlation is actually much more nuanced. In the United States as a whole there did not seem to be any meaningful correlation between the two. In some states there seemed to be no correlation, a slight positive correlation, or even a negative correlation. We theorize that this may be because individual states assign school funding differently. Some states may reactively give more funding to the districts with the lowest graduation rates, whereas others may allocate funding arbitrarily.
 
     <h2> <span style ="font-weight:normal"> US States </span> </h2>
   <div id="tester" style="width:1000px;height:550px;"></div>
   <%const spending = [];%>
   <%const rates = [];%>
+  <%const names = [];%>
   <% for(let i=0; i<data.length; i++){ %>
   <%  spending.push(data[i].spending);%>
   <%  rates.push(data[i].gradRate);%>
+  <% names.push(data[i].name);%>
   <%}%>
   <%let spendingEJS = spending%>
-  <% let ratesEJS = rates%>
+  <%let ratesEJS = rates%>
+  <%let namesEJS = names%>
 
   <p id="average_spending"></p>
   <p id="average_grad"></p>
@@ -45,17 +48,31 @@
   let spendArrayJS = [];
   spendArrayJS = spendingJS.split(",");
   let ratesJS = [];
-  let rateJS = "<%=ratesEJS%>)";
+  let rateJS = "<%=ratesEJS%>";
   let rateArrayJS = rateJS.split(",");
+  let namesJS = "<%=namesEJS%>";
+  let namesArrayJS = namesJS.split(",");
+  console.log(namesJS);
   for(let i=0; i<spendArrayJS.length;i++){
     spendJS.push(parseInt(spendArrayJS[i]));
   }
   for(let i=0; i<rateArrayJS.length;i++){
     ratesJS.push(parseInt(rateArrayJS[i]));
   }
+
+  let spendJSvar = spendJS.toString();
+  let spendJSvarArray = spendJSvar.split(",")
+  let ratesJSvar = ratesJS.toString();
+  let ratesJSvarArray = ratesJSvar.split(",")
+  spendJSvarArray.sort(function (a, b) {  return a-b;  });
+  ratesJSvarArray.sort(function (a, b) {  return a-b;  });
+  lowX = spendJSvarArray[0]-2000;
+  highX = spendJSvarArray[rateArrayJS.length]+2000;
+  lowY = ratesJSvarArray[0]-10;
+  highY = ratesJSvarArray[rateArrayJS.length]+10;
   TESTER = document.getElementById('tester');
-  var layout = {xaxis: {title: "Spending per Student (in US Dollars)", range: [ 6000, 25000]}, yaxis: {title: "Graduation Rate (Percentage)", range: [72, 100]}};
-  Plotly.newPlot( TESTER,[{ x: spendJS, y: ratesJS, mode: "markers", type:"scatter" }], layout );
+  var layout = {xaxis: {title: "Spending per Student (in US Dollars)", range: [lowX, highX]}, yaxis: {title: "Graduation Rate (Percentage)", range: [lowY, highY]}};
+  Plotly.newPlot( TESTER,[{ x: spendJS, y: ratesJS, mode: "markers", type:"scatter", text: namesArrayJS }], layout );
   let spendTally = 0;
   let rateTally = 0;
   for(let i=0; i<spendJS.length; i++){
