@@ -108,6 +108,14 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
 
 
     <script>
@@ -118,21 +126,27 @@
     let rateJS = "74,50,67,72,95,95";
     let name = "California";
     let rateArrayJS = rateJS.split(",");
+    let namesJS = "Mendota Unified,Westwood Unified,Muroc Joint Unified,Lakeside Union Elementary,Los Banos Unified,Needles Unified";
+    let namesArrayJS = namesJS.split(",");
     for(let i = 0; i<spendArrayJS.length; i++){
       spendJS.push(parseInt(spendArrayJS[i]));
     }
     for(let i = 0; i<rateArrayJS.length;i++){
       ratesJS.push(parseInt(rateArrayJS[i]));
     }
-      spendJS.sort(function (a, b) {  return a - b;  });
-      ratesJS.sort(function (a, b) {  return a - b;  });
-      lowX = spendJS[0]-2000;
-      highX = spendJS[5]+2000;
-      lowY = ratesJS[0]-10;
-      highY = ratesJS[5]+10;
+    let spendJSvar = spendJS.toString();
+    let spendJSvarArray = spendJSvar.split(",")
+    let ratesJSvar = ratesJS.toString();
+    let ratesJSvarArray = ratesJSvar.split(",")
+    spendJSvarArray.sort(function (a, b) {  return a-b;  });
+    ratesJSvarArray.sort(function (a, b) {  return a-b;  });
+    lowX = spendJSvarArray[0]-2000;
+    highX = spendJSvarArray[rateArrayJS.length]+2000;
+    lowY = ratesJSvarArray[0]-10;
+    highY = ratesJSvarArray[rateArrayJS.length]+10;
     TESTER = document.getElementById('tester');
     var layout = {xaxis: {title: "Spending per Student (in US Dollars)", range: [lowX, highX]}, yaxis: {title: "Graduation Rate (Percentage)",  range: [lowY, highY]}};
-    Plotly.newPlot( TESTER,[{ x: spendJS, y: ratesJS, mode: "markers", type:"scatter" }],layout );
+    Plotly.newPlot( TESTER,[{ x: spendJS, y: ratesJS, mode: "markers", type:"scatter", text: namesArrayJS }],layout );
     let spendTally = 0;
     let rateTally = 0;
     for(let i=0; i<spendJS.length; i++){
@@ -142,17 +156,20 @@
     let spendAvg = spendTally/spendJS.length;
     let rateAvg = rateTally/ratesJS.length;
     let summary = document.getElementById("summary");
+    let spendString = Math.round(spendAvg).toString();
+    let spendingString = spendString.slice(0,spendString.length-3) +"," + spendString.slice(spendString.length-3, spendString.length);
+
     if(rateAvg>85&&spendAvg>11251){
-      summary.innerHTML = "This infographic shows a slight correlation between increased spending per student and graduation rate. Compared to the infographic of the entire nation, " + name + " has an upward trend in the numerical value of graduation rates relative to spending per student that is not visible in the national infographic. This would suggest that this trend is isolated and is not representative of the nation if states are compared when examining data for the country. The average graduation rate for " + name + " based on this data is " + Math.round(rateAvg) + "%, which is higher than 85%, the average graduation rate for the nation. The average funding per student for " + name + " based on this data is $" + Math.round(spendAvg) + ", which is higher than $11,251, the average funding per student for the nation."
+      summary.innerHTML = "This infographic shows little correlation between increased spending per student and graduation rate. This is similar to the lack of a trend shown in the infographic for the nation. The average graduation rate for " + name + " based on this data is " + Math.round(rateAvg) + "%, which is higher than 85%, the average graduation rate for the nation. The average funding per student for " + name + " based on this data is $" + spendingString + ", which is higher than $11,251, the average spending per student for the nation."
     }
     else if(rateAvg>85&&spendAvg<11251){
-      summary.innerHTML = "This infographic shows a slight correlation between increased spending per student and graduation rate. Compared to the infographic of the entire nation, " + name + " has an upward trend in the numerical value of graduation rates relative to spending per student that is not visible in the national infographic. This would suggest that this trend is isolated and is not representative of the nation if states are compared when examining data for the country. The average graduation rate for " + name + " based on this data is " + Math.round(rateAvg) + "%, which is higher than 85%, the average graduation rate for the nation. The average funding per student for " + name + " based on this data is $" + Math.round(spendAvg) + ", which is lower than $11,251, the average funding per student for the nation."
+      summary.innerHTML = "This infographic shows little correlation between increased spending per student and graduation rate. This is similar to the lack of a trend shown in the infographic for the nation. The average graduation rate for " + name + " based on this data is " + Math.round(rateAvg) + "%, which is higher than 85%, the average graduation rate for the nation. The average graduation rate for " + name + " based on this data is " + Math.round(rateAvg) + "%, which is higher than 85%, the average graduation rate for the nation. The average spending per student for " + name + " based on this data is $" + spendingString + ", which is lower than $11,251, the average funding per student for the nation."
     }
     else if(rateAvg<85&&spendAvg>11251){
-      summary.innerHTML = "This infographic shows a slight correlation between increased spending per student and graduation rate. Compared to the infographic of the entire nation, " + name + " has an upward trend in the numerical value of graduation rates relative to spending per student that is not visible in the national infographic. This would suggest that this trend is isolated and is not representative of the nation if states are compared when examining data for the country. The average graduation rate for " + name + " based on this data is " + Math.round(rateAvg) + "%, which is lower than 85%, the average graduation rate for the nation. The average funding per student for " + name + " based on this data is $" + Math.round(spendAvg) + ", which is higher than $11,251, the average funding per student for the nation."
+      summary.innerHTML = "This infographic shows little correlation between increased spending per student and graduation rate. This is similar to the lack of a trend shown in the infographic for the nation. The average graduation rate for " + name + " based on this data is " + Math.round(rateAvg) + "%, which is higher than 85%, the average graduation rate for the nation. The average graduation rate for " + name + " based on this data is " + Math.round(rateAvg) + "%, which is lower than 85%, the average graduation rate for the nation. The average spending per student for " + name + " based on this data is $" + spendingString + ", which is higher than $11,251, the average funding per student for the nation."
     }
     else {
-      summary.innerHTML = "This infographic shows a slight correlation between increased spending per student and graduation rate. Compared to the infographic of the entire nation, " + name + " has an upward trend in the numerical value of graduation rates relative to spending per student that is not visible in the national infographic. This would suggest that this trend is isolated and is not representative of the nation if states are compared when examining data for the country. The average graduation rate for " + name + " based on this data is " + Math.round(rateAvg) + "%, which is lower than 85%, the average graduation rate for the nation. The average funding per student for " + name + " based on this data is $" + Math.round(spendAvg) + ", which is lower than $11,251, the average funding per student for the nation."
+      summary.innerHTML = "This infographic shows little correlation between increased spending per student and graduation rate. This is similar to the lack of a trend shown in the infographic for the nation. The average graduation rate for " + name + " based on this data is " + Math.round(rateAvg) + "%, which is higher than 85%, the average graduation rate for the nation. The average graduation rate for " + name + " based on this data is " + Math.round(rateAvg) + "%, which is lower than 85%, the average graduation rate for the nation. The average spending per student for " + name + " based on this data is $" + spendingString + ", which is lower than $11,251, the average funding per student for the nation."
     }
     </script>
 
