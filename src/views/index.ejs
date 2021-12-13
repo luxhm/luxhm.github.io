@@ -81,8 +81,10 @@
   }
   let spendAvg = Math.round(spendTally/spendJS.length);
   let rateAvg = Math.round(rateTally/ratesJS.length);
+  let spendString = Math.round(spendAvg).toString();
+  let spendingString = spendString.slice(0,spendString.length-3) +"," + spendString.slice(spendString.length-3, spendString.length);
 
-  document.getElementById("average_spending").innerHTML = "Average spending: $" + spendAvg;
+  document.getElementById("average_spending").innerHTML = "Average spending: $" + spendingString;
   document.getElementById("average_grad").innerHTML = "Average graduation rate: " + rateAvg + "%";
 
   </script>
